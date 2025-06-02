@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuchoManhwa</title>
+    <link rel="stylesheet" href="styles-manhwa.css">
+</head>
+<body>
+
+    <!-- Flecha de volver -->
+    <a href="index.html" class="flecha-volver">⬅ Volver</a>
+
+    <h1 class="titulo">MUCHOMANHWA</h1> <!-- Se cambiará dinámicamente según el manga seleccionado -->
+    <br>
+
+    <div id="menu-inicio" class="menu-inicio">
+        <div class="manhwa" onclick="mostrarCapitulos('manhwa1')">
+            <div class="nombre">Lector Omnisciente</div>
+            <img src="manhwa1.jpg" alt="manhwa 1">
+        </div>
+        <div class="manhwa" onclick="mostrarCapitulos('manhwa2')">
+            <div class="nombre">Manhwa 02</div>
+            <img src="manga2.jpg" alt="manhwa 2">
+        </div>
+    </div>
+
+    <div id="capitulos-container" class="capitulos-container">
+        <h2>Capítulos</h2>
+        <div id="lista-capitulos"></div>
+        <button onclick="cerrarCapitulos()">Cerrar</button>
+    </div>
+
+    <div id="visor-container" class="visor-container">
+        <button class="flecha-atras" onclick="volverAlMenu()">⬅ Volver</button>
+        <iframe id="visor-pdf" src="" frameborder="0"></iframe>
+    </div>
+
+    <script src="script-manhwa.js"></script>
+
+</body>
+</html>

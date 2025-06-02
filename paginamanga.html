@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuchoManga</title>
+    <link rel="stylesheet" href="styles-manga.css">
+</head>
+<body>
+
+    <!-- Flecha de volver -->
+    <a href="index.html" class="flecha-volver">⬅ Volver</a>
+
+    <h1 class="titulo">MUCHOMANGA</h1>
+    <br>
+
+    <div id="menu-inicio" class="menu-inicio">
+        <div class="manga" onclick="mostrarCapitulos('manga1')">
+            <div class="nombre">Shuumatsu no Valkyrie</div>
+            <img src="manga1.jpeg" alt="Manga 1">
+        </div>
+        <div class="manga" onclick="mostrarCapitulos('manga2')">
+            <div class="nombre">Vagabond</div>
+            <img src="manga2.jpg" alt="Manga 2">
+        </div>
+    </div>
+
+    <div id="capitulos-container" class="capitulos-container">
+        <h2>Capítulos</h2>
+        <div id="lista-capitulos"></div>
+        <button onclick="cerrarCapitulos()">Cerrar</button>
+    </div>
+
+    <div id="visor-container" class="visor-container">
+        <button class="flecha-atras" onclick="volverAlMenu()">⬅ Volver</button>
+        <iframe id="visor-pdf" src="" frameborder="0"></iframe>
+    </div>
+
+    <script src="script-manga.js"></script>
+
+</body>
+</html>
