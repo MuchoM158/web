@@ -1,6 +1,6 @@
 function mostrarCapitulos(manga) {
     const capitulos = {
-        'manga1': ['SNV cap 01.pdf', 'SNV cap 02.pdf', 'SNV cap 03.pdf', 'SNV cap 04.pdf'],
+        'manga1': ['https://drive.google.com/file/d/1KMs4DBuoagsiE5LaZh_gGDxPZflgcbHC/view?usp=sharing', 'SNV cap 02.pdf', 'SNV cap 03.pdf', 'SNV cap 04.pdf'],
         'manga2': ['Vagabond cap 01.pdf', 'Vagabond cap 02.pdf']
     };
     const lista = document.getElementById("lista-capitulos");
