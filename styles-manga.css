@@ -22,7 +22,7 @@ body {
     top: 10px;
     left: 10px;
     font-family: "Barlow Black", sans-serif; /* Mantener la fuente */
-    font-size: 20px;
+    font-size: 1.3vw;
     color: white;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.7);
@@ -39,7 +39,7 @@ body {
 /* Estilo del título */
 .titulo {
     font-family: "Mob Psycho Font";
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: bold;
     margin-top: 60px;
     text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
@@ -56,13 +56,13 @@ body {
 /* Diseño de cada manga */
 .manga {
     position: relative;
-    width: 600px;
+    width: 39vw;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .manga img {
-    width: 100%;
+    width: 39vw;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
@@ -82,15 +82,15 @@ body {
     background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px;
-    width: 430px;
+    width: 30vw;
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 /* Contenedor de capítulos */
 .capitulos-container {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 1.3vw;
     display: none;
     position: fixed;
     top: 50%;
@@ -100,7 +100,7 @@ body {
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    width: 300px;
+    width: 20vw;
     color: black;
 }
 
@@ -108,7 +108,7 @@ body {
 button {
     margin-top: 10px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.05vw;
     cursor: pointer;
     border: none;
     background: #333;
@@ -144,6 +144,7 @@ button:hover {
 
 /* Botón de retroceso */
 .flecha-atras {
+    font-size: 1.2vw;
     position: absolute;
     top: 10px;
     left: 10px;
