@@ -9,6 +9,13 @@ body {
     color: white;
 }
 
+@font-face {
+    font-family: 'Mob Psycho Font';
+    src: url('mob-psycho-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Flecha de volver */
 .flecha-volver {
     position: absolute;
