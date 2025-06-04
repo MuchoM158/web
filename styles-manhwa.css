@@ -9,6 +9,13 @@ body {
     color: white;
 }
 
+@font-face {
+    font-family: 'Mob Psycho Font';
+    src: url('mob-psycho-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Flecha de volver */
 .flecha-volver {
     position: absolute;
@@ -46,7 +53,7 @@ body {
     margin-top: 50px;
 }
 
-/* Diseño de cada manga */
+/* Diseño de cada manhwa */
 .manhwa {
     position: relative;
     width: 600px;
@@ -65,7 +72,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Nombre del manga */
+/* Nombre del manhwa */
 .nombre {
     font-family: "Barlow Black";
     position: absolute;
