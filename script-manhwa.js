@@ -1,7 +1,7 @@
 function mostrarCapitulos(manhwa) {
     const capitulos = {
         'manhwa1': [
-            { nombre: "Capítulo 1", url: "https://drive.google.com/file/d/1KMs4DBuoagsiE5LaZh_gGDxPZflgcbHC/preview" },
+            { nombre: "Capítulo 1", url: "https://www.webtoons.com/es/fantasy/omniscient-reader/ep-0-pr%C3%B3logo/viewer?title_no=2208&episode_no=1" },
             { nombre: "Capítulo 2", url: "https://drive.google.com/file/d/1bcnCIFYs3jc2_iDzqVI3wKA1tHtxytsL/preview" },
             { nombre: "Capítulo 3", url: "https://drive.google.com/file/d/1qOsPftdxz4p2BPAetZ2Z-7LWuzBeHyWY/preview" },
             { nombre: "Capítulo 4", url: "https://drive.google.com/file/d/1iHIlrnhrvqxeW-BFt-e-6BLIyD48iiJH/preview" }
