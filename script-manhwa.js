@@ -1,10 +1,10 @@
 function mostrarCapitulos(manhwa) {
     const capitulos = {
         'manhwa1': [
-            { nombre: "Capítulo 1", url: "https://drive.google.com/file/d/1TXW_dxefapJM_ZotqGVEp4hEd-K1LEkz/preview" },
+            { nombre: "Prólogo", url: "https://drive.google.com/file/d/1TXW_dxefapJM_ZotqGVEp4hEd-K1LEkz/preview" },
+            { nombre: "Capítulo 1", url: "https://drive.google.com/file/d/130DU0-jwOvPWflPEYkxkzYTaRRanTk4x/preview" },
             { nombre: "Capítulo 2", url: "" },
-            { nombre: "Capítulo 3", url: "" },
-            { nombre: "Capítulo 4", url: "" }
+            { nombre: "Capítulo 3", url: "" }
         ],
         'manhwa2': [
             { nombre: "Capítulo 1", url: "" },
