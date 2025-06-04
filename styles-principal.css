@@ -7,6 +7,13 @@ body {
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Mob Psycho Font';
+    src: url('mob-psycho-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Contenedor del título */
 .titulo-container {
     width: 100%;
