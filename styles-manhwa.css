@@ -161,3 +161,58 @@ button:hover {
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); /* Iluminación al pasar el cursor */
     text-shadow: 0px 0px 10px white;
 }
+
+/* Ajusta para móviles */
+@media screen and (max-width: 768px) {  
+    .titulo {
+        font-size: 8vw; 
+        margin-top: 15vw;
+        margin-bottom: 15vw;
+    }
+
+    .menu-inicio {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center;
+    }
+
+    .manhwa {
+        width: 80vw;
+    }
+
+    .manhwa img {
+        width: 80vw;
+        border-radius: 5px;
+    }
+
+    .nombre {
+        width: 70vw;
+        font-size: 5vw;
+    }
+
+    .flecha-volver, .flecha-atras {
+        font-size: 3vw;
+        padding: 10px;
+    }
+
+    .capitulos-container {
+        width: 60vw;
+        font-size: 4vw;
+        padding: 15px;
+    }
+
+    button{
+        padding: 10px;
+        font-size: 3vw;
+    }
+
+    .visor-container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .imagen-visor {
+        max-width: 100%;
+        max-height: 100vh;
+    }
+}
