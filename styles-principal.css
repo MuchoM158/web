@@ -83,3 +83,43 @@ body {
 .categoria:hover {
     transform: scale(1.1);
 }
+
+/* Ajusta para móviles */
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 12vw;
+        margin-top: 5vw;
+    }
+
+    .titulo-container {
+        height: 25vw;
+    }
+
+    .logo {
+        margin-top: 4.5vw;
+        width: 15vw;
+        height: 15.7vw;
+    }
+
+    .secciones {
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        margin-top: 3.5vw;
+    }
+
+    .categoria {
+        width: 80vw;
+    }
+
+    .categoria img {
+        width: 80vw;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .titulo-seccion {
+        font-size: 5vw;
+        margin-bottom: 5px;
+    }
+}
