@@ -14,6 +14,13 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Manga Hollow';
+    src: url('Manga Hollow.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Contenedor del título */
 .titulo-container {
     width: 100%;
@@ -33,7 +40,7 @@ body {
 }
 
 .titulo {
-    font-family: "Barlow Black";
+    font-family: "Manga Hollow";
     font-size: 5.5vw;
     font-weight: bold;
     opacity: 1;
