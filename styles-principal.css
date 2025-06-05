@@ -42,7 +42,6 @@ body {
 .titulo {
     font-family: "Manga Hollow";
     font-size: 5.5vw;
-    font-weight: bold;
     opacity: 1;
     transition: opacity 1s ease-in-out;
     text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
