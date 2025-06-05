@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     let titulo = document.getElementById("titulo");
-    let textos = ["MuchoManga", "MuchoManhwa", "MuchoM..."];
+    let textos = ["MuchoManga", "MuchoManhwa"];
     let index = 0;
 
     function cambiarTitulo() {
@@ -8,11 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => {
             titulo.textContent = textos[index];
             titulo.style.opacity = 1;
-            index++;
+            
+            index = (index + 1) % textos.length;
 
-            if (index >= textos.length) {
-                clearInterval(intervalo);
-            }
         }, 1000);
     }
 
