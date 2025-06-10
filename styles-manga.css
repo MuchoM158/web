@@ -90,7 +90,7 @@ body {
 
 /* Reproductor de musica */
 .player {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.90);
     padding: 2.1vw;
     border-radius: 15px;
     text-align: center;
@@ -118,6 +118,7 @@ body {
 }
 
 .controls button:hover {
+    background-color: gray;
     color: #ddd;
 }
 
@@ -251,15 +252,7 @@ button:hover {
 
     .controls button {
         font-size: 5vw;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: white;
         padding: 0vw;
-    }
-
-    .controls button:hover {
-        color: #ddd;
     }
 
     #volume {
