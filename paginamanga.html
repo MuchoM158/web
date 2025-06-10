@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MuchoManga</title>
     <link rel="stylesheet" href="styles-manga.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -29,9 +30,10 @@
         <audio id="audio"></audio>
         <p id="timeDisplay">00:00 / 00:00</p>
         <div class="controls">
-            <button id="prev">⏮️</button>
-            <button id="playPause">▶️</button>
-            <button id="next">⏭️</button>
+            <button id="prev"><i class="fa-solid fa-backward"></i></button>
+            <button id="playPause"><i class="fa-solid fa-play"></i></button>
+            <button id="next"><i class="fa-solid fa-forward"></i></button>
+            <button id="volumeBtn"><i class="fa-solid fa-volume-up"></i></button>
             <input id="volume" type="range" min="0" max="1" step="0.1">
         </div>
     </div>
