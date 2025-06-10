@@ -1,10 +1,10 @@
 function mostrarCapitulos(manga) {
     const capitulos = {
         'manga1': [
-            { nombre: "Capítulo 3", url: "https://drive.google.com/file/d/1leETu81dObY97hjvhtrY_nDWgEZakTxu/preview" },
             { nombre: "Capítulo 4", url: "https://drive.google.com/file/d/1EJQdalC9CXHbxvALUBth2HnN0kdmbMN5/preview" },
             { nombre: "Capítulo 5", url: "https://drive.google.com/file/d/1HwuEVmzQZxdPkSeOEOpNvifg8x-VMfnI/preview" },
-            { nombre: "Capítulo 6", url: "https://drive.google.com/file/d/1NY4RrdwqKv8j1y_qmMUujIyfYj5hNwAH/preview" }
+            { nombre: "Capítulo 6", url: "https://drive.google.com/file/d/1NY4RrdwqKv8j1y_qmMUujIyfYj5hNwAH/preview" },
+            { nombre: "Capítulo 7", url: "https://drive.google.com/file/d/1GK3u501OQEmshKFTVfgwcWzaeqT6Px10/preview" }
         ],
         'manga2': [
             { nombre: "Capítulo 1", url: "https://drive.google.com/file/d/1Eiv9_EynV17Fl9TUk02XJgU1dvFw-RMI/preview" },
