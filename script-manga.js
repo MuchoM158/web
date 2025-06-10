@@ -78,10 +78,10 @@ function updateTime() {
 function playPause() {
     if (audio.paused) {
         audio.play();
-        playPauseBtn.textContent = "⏸️";
+        playPauseBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
     } else {
         audio.pause();
-        playPauseBtn.textContent = "▶️";
+        playPauseBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 }
 
