@@ -90,13 +90,13 @@ body {
 
 /* Reproductor de musica */
 .player {
+    margin-top: 15vw;
     background-color: rgba(0, 0, 0, 0.90);
     padding: 2.1vw;
     border-radius: 15px;
     text-align: center;
     width: 20vw;
     margin-left: 50%;
-    margin-top: 10vw;
     color: white;
     transform: translate(-50%, -50%);
     font-family: "Barlow Black";
@@ -105,12 +105,12 @@ body {
 .controls {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 0.5vw;
+    margin-top: 0.3vh;
 }
 
 .controls button {
-    font-size: 24px;
+    font-size: 1.6vw;
     background: none;
     border: none;
     cursor: pointer;
@@ -118,12 +118,19 @@ body {
 }
 
 .controls button:hover {
-    background-color: gray;
-    color: #ddd;
+    color: none;
+}
+
+#volumeBtn {
+    box-shadow: none;
+    text-shadow: none;
 }
 
 #volume {
-    width: 100%;
+    height: 1vh;
+    width: 20vw;
+    align-self: center;
+    margin-top: 1.5vh;
 }
 
 /* Contenedor de capítulos */
@@ -235,28 +242,25 @@ button:hover {
 
     /* Reproductor de musica */
     .player {
-        padding: 2.1vw;
-        text-align: center;
         width: 55vw;
         font-size: 3vw;
-        margin-left: 50%;
         margin-top: 27vw;
-        transform: translate(-50%, -50%);
-        font-family: "Barlow Black";
     }
 
     .controls {
-        display: flex;
-        justify-content: center;
+        align-items: center;
+        gap: 0vw;
     }
 
     .controls button {
-        font-size: 5vw;
-        padding: 0vw;
+        font-size: 3.2vw;
     }
 
     #volume {
-        width: 100%;
+        height: 1vh;
+        width: 20vw;
+        align-self: center;
+        margin-top: 1.5vh;
     }
 
     .capitulos-container {
