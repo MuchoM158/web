@@ -88,6 +88,43 @@ body {
     font-size: 2vw;
 }
 
+/* Reproductor de musica */
+.player {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2.1vw;
+    border-radius: 15px;
+    text-align: center;
+    width: 20vw;
+    margin-left: 50%;
+    margin-top: 10vw;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-family: "Barlow Black";
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.controls button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.controls button:hover {
+    color: #ddd;
+}
+
+#volume {
+    width: 100%;
+}
+
 /* Contenedor de capítulos */
 .capitulos-container {
     font-family: monospace;
@@ -193,6 +230,40 @@ button:hover {
     .flecha-volver, .flecha-atras {
         font-size: 3vw;
         padding: 10px;
+    }
+
+    /* Reproductor de musica */
+    .player {
+        padding: 2.1vw;
+        text-align: center;
+        width: 55vw;
+        font-size: 3vw;
+        margin-left: 50%;
+        margin-top: 27vw;
+        transform: translate(-50%, -50%);
+        font-family: "Barlow Black";
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+    }
+
+    .controls button {
+        font-size: 5vw;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: 0vw;
+    }
+
+    .controls button:hover {
+        color: #ddd;
+    }
+
+    #volume {
+        width: 100%;
     }
 
     .capitulos-container {
