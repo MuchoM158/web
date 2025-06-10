@@ -44,3 +44,65 @@ function volverAlMenu() {
     document.getElementById("capitulos-container").style.display = "block";
     document.querySelector(".titulo").textContent = "MUCHOMANGA";
 }
+
+const audio = document.getElementById("audio");
+const playPauseBtn = document.getElementById("playPause");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+const volumeSlider = document.getElementById("volume");
+const songTitle = document.getElementById("songTitle");
+const timeDisplay = document.getElementById("timeDisplay");
+
+let songs = [
+    { title: "TEMA 01", file: "TEMA 01.mp3" },
+    { title: "TEMA 02", file: "TEMA 02.mp3" },
+    { title: "TEMA 03", file: "TEMA 03.mp3" }
+];
+
+let songIndex = 0;
+
+function loadSong(index) {
+    audio.src = songs[index].file;
+    songTitle.textContent = songs[index].title;
+    audio.load();
+}
+
+function updateTime() {
+    let minutes = Math.floor(audio.currentTime / 60).toString().padStart(2, "0");
+    let seconds = Math.floor(audio.currentTime % 60).toString().padStart(2, "0");
+    let durationMinutes = Math.floor(audio.duration / 60).toString().padStart(2, "0") || "00";
+    let durationSeconds = Math.floor(audio.duration % 60).toString().padStart(2, "0") || "00";
+    timeDisplay.textContent = `${minutes}:${seconds} / ${durationMinutes}:${durationSeconds}`;
+}
+
+function playPause() {
+    if (audio.paused) {
+        audio.play();
+        playPauseBtn.textContent = "⏸️";
+    } else {
+        audio.pause();
+        playPauseBtn.textContent = "▶️";
+    }
+}
+
+function prevSong() {
+    songIndex = (songIndex > 0) ? songIndex - 1 : songs.length - 1;
+    loadSong(songIndex);
+    audio.play();
+}
+
+function nextSong() {
+    songIndex = (songIndex < songs.length - 1) ? songIndex + 1 : 0;
+    loadSong(songIndex);
+    audio.play();
+}
+
+audio.onended = nextSong;
+audio.ontimeupdate = updateTime;
+volumeSlider.oninput = () => audio.volume = volumeSlider.value;
+
+playPauseBtn.addEventListener("click", playPause);
+prevBtn.addEventListener("click", prevSong);
+nextBtn.addEventListener("click", nextSong);
+
+loadSong(songIndex);
