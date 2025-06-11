@@ -56,7 +56,11 @@ const timeDisplay = document.getElementById("timeDisplay");
 let songs = [
     { title: "TEMA 01", file: "TEMA 01.mp3" },
     { title: "TEMA 02", file: "TEMA 02.mp3" },
-    { title: "TEMA 03", file: "TEMA 03.mp3" }
+    { title: "TEMA 03", file: "TEMA 03.mp3" },
+    { title: "TEMA 04", file: "TEMA 04.mp3" },
+    { title: "TEMA 05", file: "TEMA 05.mp3" },
+    { title: "TEMA 06", file: "TEMA 06.mp3" },
+    { title: "TEMA 07", file: "TEMA 07.mp3" }
 ];
 
 let songIndex = 0;
