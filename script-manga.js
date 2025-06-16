@@ -60,7 +60,10 @@ let songs = [
     { title: "TEMA 04", file: "TEMA 04.mp3" },
     { title: "TEMA 05", file: "TEMA 05.mp3" },
     { title: "TEMA 06", file: "TEMA 06.mp3" },
-    { title: "TEMA 07", file: "TEMA 07.mp3" }
+    { title: "TEMA 07", file: "TEMA 07.mp3" },
+    { title: "TEMA 08", file: "TEMA 08.mp3" },
+    { title: "TEMA 09", file: "TEMA 09.mp3" },
+    { title: "TEMA 10", file: "TEMA 10.mp3" }
 ];
 
 let songIndex = 0;
