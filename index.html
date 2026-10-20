@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Qué personaje de Haikyuu eres?</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <section id="portada" class="pantalla">
+    <img id="titulo" src="img/titulo.png" alt="¿Qué personaje de Haikyuu eres?">
+    <button id="btn-empezar">Empezar</button>
+  </section>
+
+  <section id="pregunta" class="pantalla" hidden>
+    <button id="btn-atras" class="icono" aria-label="Volver a la pregunta anterior"><i class="fa-solid fa-square-caret-left"></i></button>
+    <p id="progreso"></p>
+    <h2 id="texto-pregunta"></h2>
+    <div id="opciones"></div>
+  </section>
+
+  <section id="resultado" class="pantalla" hidden>
+    <p class="eres">Eres...</p>
+    <h2 id="nombre-resultado"></h2>
+    <p id="equipo-resultado"></p>
+    <img id="img-personaje" alt="" hidden>
+    <p id="descripcion"></p>
+    <p id="mensaje"></p>
+    <div class="acciones">
+      <button id="btn-descargar">Descargar resultado</button>
+      <button id="btn-reiniciar">Reiniciar test</button>
+    </div>
+  </section>
+
+  <script src="datos.js"></script>
+  <script src="calculo.js"></script>
+  <script src="personajes.js"></script>
+  <script src="tarjeta.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

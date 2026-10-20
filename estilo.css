@@ -1,0 +1,171 @@
+:root {
+  --negro: #111111;
+  --carbon: #1f1f1f;
+  --naranja: #f26a1b;
+  --crema: #fff4e6;
+  --gris: #9a9a9a;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: var(--negro);
+  background-image: radial-gradient(circle at 50% 38%, #3a2112 0%, var(--negro) 55%);
+  background-attachment: fixed;
+  color: var(--crema);
+}
+
+.pantalla {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#titulo {
+  width: min(100%, 650px);
+  height: auto;
+  filter: drop-shadow(0 0 16px rgba(242, 106, 27, 0.35));
+}
+
+button {
+  font: inherit;
+  font-size: 1.1rem;
+  min-height: 48px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid var(--naranja);
+  background: var(--carbon);
+  color: var(--crema);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.97);
+  background: var(--naranja);
+  color: var(--negro);
+}
+
+#btn-empezar {
+  background: var(--naranja);
+  color: var(--negro);
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 14px 44px;
+  margin-top: 24px;
+}
+
+#opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 480px;
+}
+
+#progreso {
+  color: var(--naranja);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 8px;
+}
+
+#texto-pregunta {
+  font-size: 1.5rem;
+  margin: 0 0 24px;
+  max-width: 480px;
+}
+
+.pantalla:not([hidden]) {
+  animation: aparecer 0.35s ease;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.icono {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  min-height: 0;
+  padding: 6px 10px;
+  border: none;
+  background: transparent;
+  color: var(--naranja);
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.icono:active {
+  background: transparent;
+  color: var(--crema);
+}
+
+.eres {
+  margin: 0;
+  color: var(--gris);
+}
+
+#nombre-resultado {
+  font-size: 2.4rem;
+  color: var(--naranja);
+  margin: 4px 0 0;
+}
+
+#equipo-resultado {
+  margin: 4px 0 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#img-personaje {
+  width: min(100%, 320px);
+  max-height: 320px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+#descripcion {
+  max-width: 480px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+#mensaje {
+  max-width: 480px;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0 0 24px;
+  padding: 16px 20px;
+  border: 2px solid var(--naranja);
+  border-radius: 12px;
+  background: var(--carbon);
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 480px;
+}
+
+#btn-descargar {
+  background: var(--naranja);
+  color: var(--negro);
+  font-weight: 700;
+}
